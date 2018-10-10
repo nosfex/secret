@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\kinglib">
+      <UniqueIdentifier>{71369e4a-8c3f-454a-bdba-5c82895475ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\kinglib">
+      <UniqueIdentifier>{6821ade4-45c6-4243-9e66-0f5cdb1a863b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\entity">
+      <UniqueIdentifier>{2e9f1e24-181e-4437-8870-d89da1d8c1e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\helpers">
+      <UniqueIdentifier>{0401526d-b7e6-4364-be1f-b1423687ccfe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\command">
+      <UniqueIdentifier>{df6c4daf-ad45-459f-b2e6-4dd865dabfd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\NewFilter1">
+      <UniqueIdentifier>{2be07932-048a-4e92-addd-f83593b11e53}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\include\king\SdlWindow.cpp">
+      <Filter>Source Files\kinglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\include\king\Engine.cpp">
+      <Filter>Source Files\kinglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\include\king\Font.cpp">
+      <Filter>Source Files\kinglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\include\king\GlContext.cpp">
+      <Filter>Source Files\kinglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\include\king\Sdl.cpp">
+      <Filter>Source Files\kinglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\external\include\king\SdlSurface.cpp">
+      <Filter>Source Files\kinglib</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\Game.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\entity\Entity.cpp">
+      <Filter>Source Files\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\entity\Board.cpp">
+      <Filter>Source Files\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\helpers\Factory.cpp">
+      <Filter>Source Files\helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\entity\Jewel.cpp">
+      <Filter>Source Files\entity</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\helpers\HelperRandom.cpp">
+      <Filter>Source Files\helpers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\external\include\king\Engine.h">
+      <Filter>Header Files\kinglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\include\king\Font.h">
+      <Filter>Header Files\kinglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\include\king\GlContext.h">
+      <Filter>Header Files\kinglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\include\king\Sdl.h">
+      <Filter>Header Files\kinglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\include\king\SdlSurface.h">
+      <Filter>Header Files\kinglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\include\king\SdlWindow.h">
+      <Filter>Header Files\kinglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\external\include\king\Updater.h">
+      <Filter>Header Files\kinglib</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\Game.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\entity\Drawable.h">
+      <Filter>Source Files\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\entity\Entity.h">
+      <Filter>Source Files\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\helpers\Factory.h">
+      <Filter>Source Files\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\entity\Board.h">
+      <Filter>Source Files\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\entity\JewelType.h">
+      <Filter>Source Files\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\entity\Jewel.h">
+      <Filter>Source Files\entity</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\helpers\HelperMath.h">
+      <Filter>Source Files\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\helpers\HelperRandom.h">
+      <Filter>Source Files\helpers</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

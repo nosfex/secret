@@ -7,7 +7,6 @@
 
 class entity::Board;
 class entity::Entity;
-class entity::GridEntity;
 class entity::Jewel;
 class Factory
 {
@@ -15,7 +14,7 @@ class Factory
 public:
 	
 	template <typename T>
-	static std::shared_ptr<T> CreateDefaultEntity(const glm::vec2& pos, const King::Engine::Texture& tex)
+	static auto CreateDefaultEntity(const glm::vec2& pos, const King::Engine::Texture& tex) -> std::shared_ptr<T>
 	{
 		std::shared_ptr<T> obj = std::make_shared<T>(pos, tex);
 		mContext->AddEntity(obj);

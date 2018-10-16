@@ -1,5 +1,6 @@
 #include "Game.h"
 #include "helpers/Factory.h"
+#include "command/SwapJewelCommand.h"
 //-----------------------------------------------------------------------------
 Game::Game() : mEngine("./assets")
 {
@@ -17,7 +18,7 @@ void Game::Start()
 	mEntityContainer.reserve((entity::Board::GRID_AXIS_COUNT * entity::Board::GRID_AXIS_COUNT) * mEntityBuffer );
 	glm::vec2 boardOffset = glm::vec2(22.5f + entity::Board::GRID_SIZE * 10, entity::Board::GRID_SIZE * 3);
 	mBoard->Start(boardOffset);
-	mBoard->Cleanup();
+	mSwapCommand = std::make_unique<SwapJewelCommand>(mBoard);
 	mEngine.Start(*this);
 }
 //-----------------------------------------------------------------------------
@@ -32,6 +33,10 @@ void Game::Update()
 				mEntityContainer[i]->mPosition.x,
 				mEntityContainer[i]->mPosition.y);
 		}
+	}
+	if (mEngine.GetMouseButtonDown() && mBoard->lockBoard == false)
+	{
+		mSwapCommand->Execute({mEngine.GetMouseX(), mEngine.GetMouseY()});
 	}
 }
 //-----------------------------------------------------------------------------

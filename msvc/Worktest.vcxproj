@@ -82,13 +82,16 @@
     <ClCompile Include="..\external\include\king\Sdl.cpp" />
     <ClCompile Include="..\external\include\king\SdlSurface.cpp" />
     <ClCompile Include="..\external\include\king\SdlWindow.cpp" />
+    <ClCompile Include="..\src\command\SwapJewelCommand.cpp" />
     <ClCompile Include="..\src\entity\Board.cpp" />
     <ClCompile Include="..\src\entity\Entity.cpp" />
     <ClCompile Include="..\src\entity\Jewel.cpp" />
     <ClCompile Include="..\src\Game.cpp" />
     <ClCompile Include="..\src\helpers\Factory.cpp" />
     <ClCompile Include="..\src\helpers\HelperRandom.cpp" />
+    <ClCompile Include="..\src\helpers\Timer.cpp" />
     <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\state\StateMachine.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\external\include\king\Engine.h" />
@@ -98,6 +101,8 @@
     <ClInclude Include="..\external\include\king\SdlSurface.h" />
     <ClInclude Include="..\external\include\king\SdlWindow.h" />
     <ClInclude Include="..\external\include\king\Updater.h" />
+    <ClInclude Include="..\src\command\Command.h" />
+    <ClInclude Include="..\src\command\SwapJewelCommand.h" />
     <ClInclude Include="..\src\entity\Board.h" />
     <ClInclude Include="..\src\entity\Drawable.h" />
     <ClInclude Include="..\src\entity\Entity.h" />
@@ -105,8 +110,10 @@
     <ClInclude Include="..\src\entity\JewelType.h" />
     <ClInclude Include="..\src\Game.h" />
     <ClInclude Include="..\src\helpers\Factory.h" />
+    <ClInclude Include="..\src\helpers\Timer.h" />
     <ClInclude Include="..\src\helpers\HelperMath.h" />
     <ClInclude Include="..\src\helpers\HelperRandom.h" />
+    <ClInclude Include="..\src\state\StateMachine.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

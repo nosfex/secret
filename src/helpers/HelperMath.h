@@ -11,5 +11,16 @@ public:
 		ret = a + (_t * (b - a));
 		return ret;
 	}
+
+	
+	static const bool RectContainsPoint(const glm::vec2& posRect, const glm::vec2 sizeRect, const glm::vec2 &point)
+	{
+		if ((point.x < posRect.x + sizeRect.x && point.x > posRect.x) &&
+			(point.y < posRect.y + sizeRect.y && point.y > point.y))
+		{
+			return true;
+		}
+		return false;
+	}
 };
 #endif //!_HELPERMATH_H_

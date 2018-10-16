@@ -28,7 +28,7 @@
     <Filter Include="Source Files\command">
       <UniqueIdentifier>{df6c4daf-ad45-459f-b2e6-4dd865dabfd7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Source Files\NewFilter1">
+    <Filter Include="Source Files\state">
       <UniqueIdentifier>{2be07932-048a-4e92-addd-f83593b11e53}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -70,6 +70,15 @@
       <Filter>Source Files\entity</Filter>
     </ClCompile>
     <ClCompile Include="..\src\helpers\HelperRandom.cpp">
+      <Filter>Source Files\helpers</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\command\SwapJewelCommand.cpp">
+      <Filter>Source Files\command</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\state\StateMachine.cpp">
+      <Filter>Source Files\state</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\helpers\Timer.cpp">
       <Filter>Source Files\helpers</Filter>
     </ClCompile>
   </ItemGroup>
@@ -120,6 +129,18 @@
       <Filter>Source Files\helpers</Filter>
     </ClInclude>
     <ClInclude Include="..\src\helpers\HelperRandom.h">
+      <Filter>Source Files\helpers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\command\Command.h">
+      <Filter>Source Files\command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\command\SwapJewelCommand.h">
+      <Filter>Source Files\command</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\state\StateMachine.h">
+      <Filter>Source Files\state</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\helpers\Timer.h">
       <Filter>Source Files\helpers</Filter>
     </ClInclude>
   </ItemGroup>

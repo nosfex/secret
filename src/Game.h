@@ -6,6 +6,7 @@
 #include <vector>
 #include "entity/Entity.h"
 #include "entity/Board.h"
+class SwapJewelCommand;
 class Factory;
 class Game : public King::Updater
 {
@@ -21,7 +22,8 @@ private:
 	King::Engine mEngine;
 	std::shared_ptr<entity::Board> mBoard;
 	std::vector< std::shared_ptr<entity::Entity>> mEntityContainer;
-
+	
+	std::unique_ptr<SwapJewelCommand> mSwapCommand;
 	static const int mEntityBuffer = 3;
 };
 #endif //_GAME_H_

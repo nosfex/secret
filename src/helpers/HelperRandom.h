@@ -17,6 +17,6 @@ private:
 	std::mt19937 mEngine;
 	std::vector<JewelType> mJewelTypes;
 	mutable int mJewelCount;
-	const int GetJewelType() ;
+	const int GetJewelType();
 };
 #endif // _RANDOM_H_
